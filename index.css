@@ -1,0 +1,27 @@
+/* Global reset and basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Centered content and spacing for main app container */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Smooth transitions for interactive elements */
+button, .filter-select, .data-input {
+  transition: background-color 0.2s ease;
+}

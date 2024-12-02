@@ -1,0 +1,183 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: #000; /* Black background */
+  padding-top: 60px; /* Add padding to prevent content from being hidden behind the fixed header */
+}
+
+/* Header */
+.app-header {
+  position: fixed; /* Fix the header at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4a90e2;
+  color: white;
+  padding: 15px 0; /* Add some padding for the header */
+  z-index: 1000; /* Ensure header stays above other content */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for visual separation */
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav-links-left, .nav-links-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links-left {
+  justify-content: flex-start;
+}
+
+.nav-links-right {
+  justify-content: flex-end;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0 15px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  flex-grow: 1;
+  margin: 0;
+}
+
+/* Main content */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 80px;
+  flex-wrap: wrap; /* Ensure sections wrap on smaller screens */
+}
+
+/* Historical Details Section (Left of the Map) */
+.artifact-description-section {
+  width: 25%;
+  padding: 15px;
+  background-color: #333;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Map container */
+.map-container {
+  width: 50%; /* Adjust the width to fit better */
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center the map */
+}
+
+/* Location and Archival Method Section (Right of the Map) */
+.artifact-location-section {
+  width: 25%;
+  padding: 15px;
+  background-color: #333;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* DataBox and Filter Section (Above the Map) */
+.filter-map-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* DataBox container */
+.data-box {
+  width: 30%; /* Adjust width of DataBox */
+  background-color: #e6effc;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  text-align: left;
+}
+
+/* Catalogue Page */
+.catalogue-page {
+  padding: 20px;
+}
+
+.artifact-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.catalogue-item {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.catalogue-item h3 {
+  color: #4a90e2; /* Blue color for the title */
+}
+
+.catalogue-item .view-details {
+  color: #4a90e2;
+  text-decoration: underline;
+}
+
+.catalogue-item:hover {
+  background-color: #444;
+}
+
+/* Sorting Dropdown Styles */
+.sort-options {
+  margin-bottom: 20px;
+}
+
+.sort-options label {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.sort-options select {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
